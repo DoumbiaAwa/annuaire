@@ -1,0 +1,76 @@
+.mat-dialog-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  // .mat-dialog-content {
+    
+   
+    
+  // }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    background-color: #75ff9c;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formplat {
+    width: 100%;
+  }
+  
+  .formplat form {
+    width: 80%;
+  }
+  
+  .formplat form div {
+    margin-bottom: 15px;
+  }
+  
+  .formplat label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .formplat input[type="text"],
+  .formplat input[type="number"],
+  .formplat input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #81f38a;
+    border-radius: 5px;
+  }
+  
+  .image {
+    float: left;
+    margin-top: 20px;
+  }
+  
+  .pl {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .close-button {
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

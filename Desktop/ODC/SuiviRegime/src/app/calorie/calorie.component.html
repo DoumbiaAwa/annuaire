@@ -1,0 +1,51 @@
+
+  <!-- la partie entête -->
+  <div class="tete">
+    <div class="container">
+      <div class="image">
+        <img src="../assets/ca.png" alt="">
+       </div>
+        <div class="text">
+          <p>Transforme chaque journée en une délicieuse
+             composition de saveurs équilibrées
+              et de bien-être nourrissant.</p>
+        </div>
+      </div>
+    </div>
+<div class="f">
+
+    <!-- la partie form -->
+    <div class="result" [hidden]="!resultat">
+        Votre besoin quotidien en calories est {{ resultat | number: '' }}
+      </div>
+    <div class="form-container">
+        <form [formGroup]="calorieform" (ngSubmit)="onSubmit()">
+          <div class="input-group">
+            <label for="poid">Poids en kg</label>
+            <input type="number" id="poid" formControlName="poid">
+          </div>
+          <div class="input-group">
+            <label for="taille">Taille en cm</label>
+            <input type="number" id="taille" formControlName="taille">
+          </div>
+          <div class="input-group">
+            <label for="age">Votre âge</label>
+            <input type="number" id="age" formControlName="age">
+          </div>
+          <div class="radio-group">
+            <label>Genre</label>
+            <div class="radio-option">
+              <input type="radio" id="feminin" formControlName="genre" [value]="'féminin'">
+              <label for="feminin">Féminin</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="masculin" formControlName="genre" [value]="'masculin'">
+              <label for="masculin">Masculin</label>
+            </div>
+          </div>
+          <button class="calculate-button" (click)="calcul()">Calculer</button>
+        </form>
+       
+      </div>
+</div>
+      

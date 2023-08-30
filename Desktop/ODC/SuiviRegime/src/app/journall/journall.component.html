@@ -1,0 +1,74 @@
+
+  <!-- la partie entête -->
+  <div class="tete">
+    <div class="container">
+      <div class="image">
+        <img src="../assets/te.png" alt="">
+       </div>
+        <div class="text">
+          <p>Transforme chaque journée en une délicieuse
+             composition de saveurs équilibrées
+              et de bien-être nourrissant.</p>
+        </div>
+        
+      </div>
+    </div>
+
+  <!-- la partie carte aliment -->
+ 
+<!-- Card ajout form-->
+
+  <div class="cards-container">
+<!-- Card ajout -->
+<div class="card" style="width: 200px; text-align: center;">
+  <img src="" alt="ajout" class="dish-image">
+  <h2 class="dish-name" style="font-size: 15px;">Nouveau plat</h2>
+    <br>
+    <button (click)="openDialog()" class="ple">Ajouter plat</button>
+</div>
+
+   <!-- <div class="card">
+      <img src="../assets/sha.jpg" alt="Spaghetti Bolognese" class="dish-image">
+      <h2 class="dish-name">Spaghetti Bolognese</h2>
+      <p class="calories">Calories : 550</p>
+      <p class="description">Des spaghettis servis avec une
+         sauce bolognaise 
+        savoureuse et du parmesan râpé.</p>
+        <div class="btn">
+        <button type="reset" class="pl">Supprimer</button>
+        <button class="md" >Modifier</button>
+      </div>
+    </div> -->
+
+  <!-- Card 1 -->
+    <!-- <div class="card">
+      <img src="" alt="Salade César" class="dish-image">
+      <h2 class="dish-name">Salade César</h2>
+      <p class="calories">Calories : 320</p>
+      <p class="description">Une salade rafraîchissante avec de la laitue, du poulet grillé, des croûtons et une vinaigrette césar.</p>
+     <div class="btn">
+      <button type="reset" class="pl">Supprimer</button>
+      <button class="md" >Modifienr</button>
+    </div>
+    </div>  -->
+
+
+    <!-- recuperation -->
+    <div class="cards-container">
+      <div class="card" *ngFor="let form of savedForms let i= index">
+        <img [src]="form.image" class="dish-image">
+        <h2 class="dish-name"> Nom :{{ form.nom }}</h2>
+        <p class="calories">Calories : {{ form.calorie }}</p>
+        <p class="description">Description : {{ form.des }}</p>
+        <div class="btn">
+          <button type="reset" class="pl" (click)="deleteDish(i)" >Supprimer</button>
+          <button class="md" >Modifier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Ajoutez d'autres cartes de plats ici -->
+
+

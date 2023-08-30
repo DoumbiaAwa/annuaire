@@ -1,0 +1,30 @@
+
+
+<!-- la partie tête du journall -->
+<div class="tete">
+    <div class="container">
+      <div class="image">
+        <img src="../assets/planifie.png" alt="">
+       </div>
+        <div class="text">
+          <p>Transforme chaque journée en une délicieuse
+             composition de saveurs équilibrées
+              et de bien-être nourrissant.</p>
+        </div>
+        
+      </div>
+      </div>
+  <!-- partie semaine -->
+  
+    <!-- <div class="semaine-box">&lt; semaine &gt;</div> -->
+
+
+<!-- les jours -->
+<div class="ctn">
+    <div *ngFor="let day of daysOfWeek" class="day-item">
+        <a class="jr" [routerLink]="['/todolist', day]">
+            <img src="../assets/calendar.png" alt="Calendrier" class="calendar-icon" />
+            <span>{{ day }}</span>
+        </a>
+    </div>
+</div>
