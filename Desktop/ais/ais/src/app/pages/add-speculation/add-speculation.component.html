@@ -1,0 +1,43 @@
+<div class="conteneur">
+
+    <h1>Ajouter une Spéculation</h1>
+
+<form>
+   
+    <div class="form-group">
+        <label for="nombre">Nom</label>
+        <input type="text" id="nom" name="nom"  placeholder="Nom" class="iptform">
+    </div>
+     
+    <div class="form-group">
+        <label for="nombre">Libelle</label>
+        <input type="text" id="cat" name="cat"  placeholder="libelle" class="iptform">
+    </div> 
+
+    <div class="form-group">
+        <label for="etat">Catégorie</label>
+        <select id="etat" name="etat" formControlName="etat">
+            <option value="non-enceinte">Catégorie1</option>
+            <option value="enceinte">Catégorie2</option>
+            <option value="pas-detat">Catégorie3</option> <!-- Correction ici -->
+        </select>
+    </div>
+  
+    
+    <div class="form-group">
+        <label for="nombre">Speculation</label>
+        <input type="text" id="cat" name="cat"  placeholder="Catégorie" class="iptform">
+    </div>
+    <button>ajouter</button>
+
+    <div class="form-group">
+        <label for="nombre">Description</label>
+        <input type="text" id="cat" name="cat"  placeholder="ajouter une description" class="iptform">
+    </div>
+
+    
+    <div class="action">
+        <button class="enregistrer">Enregistrer</button>
+    </div>
+</form>
+</div>

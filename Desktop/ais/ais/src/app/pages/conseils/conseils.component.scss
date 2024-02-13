@@ -1,0 +1,48 @@
+
+    .container{
+    margin-top: 10%;
+    }
+
+    .card {
+        width: 20%;
+        height: 90% !important;  
+        margin-bottom: 20px;
+        background: rgb(255, 255, 255);
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    button{
+       width: 40%;
+       height: 20%;
+       background-color: #FF7A00;
+       color: white;
+       border-radius: 5px solid;
+       border-color: #2B6706;
+       font-size: 10px;
+       cursor: pointer;
+       margin-left: 30%;
+    }
+    p{
+     font-size: 10px;
+     text-align: center;
+
+    }
+    h1{
+        text-align: center;
+        font-size: 20px;
+        color: #2B6706;
+    }
+    .carte{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne lorsque la largeur maximale est atteinte */
+        gap: 5%;
+        margin-top: 50px; /* Espace entre les cartes */
+    }
+.ctn{
+    margin-top: 10%;
+}
+    
+
+   

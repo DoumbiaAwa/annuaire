@@ -1,0 +1,116 @@
+.container{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+
+.title{
+    
+    color: #0c7c17 ;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 22px; /* 146.667% */
+    text-transform: capitalize;
+
+}
+
+.contenu{
+    display: flex;
+    flex-direction: row;
+     margin-top: -90px;
+     justify-content: center;
+      margin-left: 40px;
+    max-width: 100%;
+}
+.nbre{
+    color: var(--unnamed, #4E5969);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+    text-transform: capitalize;
+    margin-top: -50px; 
+    margin-left: 60px;
+    position: relative;
+}
+.nbre p {
+    margin-bottom: 10px; 
+    margin: 0; /* Réinitialise les marges */
+    position: relative;
+    top: -10px; 
+    color: #48436B;
+font-size: 10px;
+font-style: normal;
+font-weight: bold;
+line-height: 22px; /* 220% */
+text-transform: capitalize;
+}
+.card{
+    width: 200px;
+    height: 13%;
+    flex-shrink: 0;
+    border: 1px solid var(--white, #276f1c);
+ background-color: #FFF3DA
+ ;
+box-shadow: 0px 4px 4px 0px rgba(40, 114, 19, 0.25);
+margin-right: 5%;
+}
+
+
+h2{
+    color: #FE8F4A;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-top: -2px;
+}
+
+
+.containerbas{
+
+    width: 500px;
+    height: 400px;
+    border: 1px solid var(--white, #276f1c);
+ background-color: white;
+box-shadow: 0px 4px 4px 0px rgba(40, 114, 19, 0.25);
+// margin-right: 10px;
+margin-top: 5px;
+
+}
+
+h1{
+    text-align: center;
+    color: rgb(33, 96, 10);
+    font-weight: bold;
+}
+
+.carde{
+    width: 450px;
+    height: 13%;
+    flex-shrink: 0;
+    border: 1px solid var(--white, #276f1c);
+ background-color: white;
+box-shadow: 0px 4px 4px 0px rgba(40, 114, 19, 0.25);
+margin-left: 30px;
+display: flex;
+flex-direction: row;
+
+}
+
+// #chart {
+//     max-width: 650px;
+//     margin: 35px auto;
+//   }
+
+
+
+  
+ 
+  
+
