@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
+
 
 declare interface RouteInfo {
     path: string;
@@ -8,17 +9,23 @@ declare interface RouteInfo {
     class: string;
 }
 export const ROUTES: RouteInfo[] = [
-    { path: '/dashboard', title: 'Dashboard',  icon: 'fas fa-tachometer-alt', class: '' },
-    { path: '/compte', title: 'Comptes', icon: 'fas fa-user text-white', class: '' },
-    { path: '/acteur', title: 'Acteurs', icon: 'fas fa-users text-white', class: '' },
-    { path: '/conseils', title: 'Conseils', icon: 'fas fa-lightbulb text-white', class: '' },
-    // { path: '/enquete', title: 'Enquêtes', icon: 'fas fa-list-alt text-white', class: '' },
-    { path: '/message', title: 'Messages', icon: 'fas fa-envelope text-white', class: '' },
-    { path: '/produit', title: 'Filière', icon: 'fas fa-industry text-white', class: '' },
-    { path: '/categori', title: 'Categories', icon: 'fas fa-list text-white', class: '' },
-    { path: '/speculation', title: 'Speculations', icon: 'fas fa-chart-pie text-white', class: '' },
-    { path: '/zone', title: 'Zone de production', icon: 'fas fa-globe text-white', class: '' }
-];
+    { path: '/dashboard', title: 'Dashboard',  icon: 'fas fa-home', class: '' },
+    { path: '/compte', title: 'Comptes', icon: 'fas fa-user-friends', class: '' },
+    { path: '/acteur', title: 'Acteurs', icon: 'fas fa-users ', class: '' },
+    { path: '/conseils', title: 'Conseils', icon: 'fas fa-lightbulb ', class: '' },
+    // { path: '/enquete', title: 'Enquêtes', icon: 'fas fa-list-alt text-#FFAA00', class: '' },
+    { path: '/message', title: 'Messages', icon: 'fas fa-envelope ', class: '' },
+    { path: '/produit', title: 'Filière', icon: 'fas fa-industry ', class: '' },
+    { path: '/categori', title: 'Categories', icon: 'fas fa-list ', class: '' },
+    { path: '/speculation', title: 'Speculations', icon: 'fas fa-chart-pie ', class: '' },
+    { path: '/zone', title: 'Zone de production', icon: 'fas fa-globe ', class: '' },
+    { path: '/parametre', title: 'Paramètres généraux', icon: 'fas fa-cog', class: '' },
+    { path: '/pays', title: 'Pays', icon: 'fas fa-flag text-flag-color ', class: '' },
+    { path: '/unite', title: 'Unité', icon: 'fas fa-ruler ', class: '' },
+
+
+
+]
 
 @Component({
   selector: 'app-sidebar',
@@ -38,4 +45,9 @@ export class SidebarComponent implements OnInit {
       this.isCollapsed = true;
    });
   }
-}
+
+  
+
+ 
+  }
+

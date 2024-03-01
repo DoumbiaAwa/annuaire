@@ -1,41 +1,22 @@
-<nav class="navbar navbar-vertical navbar-expand-md navbar-light" style="background-color: #C1FFAC;" id="sidenav-main">
-  <div class="container-fluid" style="background-color: #C1FFAC;">
-  
-    <!-- Brand -->
-    <a class="navbar-brand pt-0" routerLinkActive="active" [routerLink]="['/dashboard']">
-      <img src="../assets/img/theme/logo.png" class="navbar-brand-img" alt="...">
-    </a>
-   
-    <!-- Collapse -->
-    <div class="collapse navbar-collapse"  style="background-color: #C1FFAC; color: #FFAA00
-; font-weight: bold;" [ngbCollapse]="isCollapsed" id="sidenav-collapse-main">
-      <!-- Collapse header -->
-     
-      <!-- Form -->
-      <!-- <form class="mt-4 mb-3 d-md-none">
-        <div class="input-group input-group-rounded input-group-merge">
-          <input type="search" class="form-control form-control-rounded form-control-prepended" placeholder="Search" aria-label="Search">
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <span class="fa fa-search"></span>
-            </div>
-          </div>
+<div class="wrapper">
+    <nav class="navbar navbar-vertical navbar-expand-md navbar-light bg-white">
+      <div class="container-fluid" id="sidebar" >
+        <div class="sidebar-header">
+            <img src="assets/img/bootstraper-logo.png" alt="bootraper logo" class="app-logo" style="width: 40px; height: 40px;">
         </div>
-      </form> -->
-      <!-- Navigation -->
-      <ul class="navbar-nav" style="background-color: #C1FFAC; color: #FFAA00
-; font-weight: bold;">
-          <li *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item" style="background-color: #C1FFAC; color: #FFAA00
-; font-weight: bold;">
-              <a routerLinkActive="active" [routerLink]="[menuItem.path]" class="nav-link" style="color: #FFAA00
-; font-weight: bold;">
-                  <i class="ni {{menuItem.icon}}" style="color: white;"></i>
-                  {{menuItem.title}}
-              </a>
-          </li>
-      </ul>
+       
+          <ul class="list-unstyled components text-secondary">
+              <li *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
+                  <a routerLinkActive="active" [routerLink]="[menuItem.path]" class="nav-link">
+                      <i class="ni {{menuItem.icon}}"></i>
+                      {{menuItem.title}}
+                  </a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+</div>
     
-    </div>
-    
-  </div>
-</nav>
+                       
+
+

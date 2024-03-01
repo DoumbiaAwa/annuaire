@@ -1,33 +1,89 @@
-<div class="container">
-    <div  class="row justify-content-center">
-    <table>
-      <thead>
-          <tr>
-               <th></th>
-              <th>Avatar</th>
-              <th>Code</th>
-              <th>Nom</th>
-              <th>Type</th>
-              <th>Adresse</th>
-              <th>Telephone</th>
-              <th>Action</th>
-          </tr>
-      </thead>
-      <tbody>
-        <tr >
-          <!-- Adjust the properties based on your data structure -->
-          <td><input type="checkbox" class="check"></td>
-          <td><img src="../assets/img/theme/acteur.webp"></td>
-          <td>lorem</td>
-          <td>lorem</td>
-          <td>lorem</td>
-          <td>lorem</td>
-          <td>lorem</td>
-          <td><button class="pr" (click)="openDialog()">voir profil</button></td>
-        </tr>
-      </tbody>
-  </table>
-</div>
-   </div>
-  
-  
+
+<div class="box-body">
+  <div class="container-fluid">
+      <div class="page-title" style="text-align: center; font-size: 40px;">
+          <h3>Liste des Comptes Utilisateurs</h3>
+      </div>
+      <button type="button" class="btn btn-primary mb-2"  (click)="openDialog()">Ajouter</button>
+
+      <div class="box box-primary">
+        <div>
+          <input class="form-control" type="text" placeholder="Search"/>
+        </div>
+              <table width="80%" class="table table-hover" id="dataTables-example">
+                  <thead>
+                      <tr>
+                        <th>Photo</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Type</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td></td>
+                        <td>Philip Chaney</td>
+                        <td>philip.chaneygmail.com</td>
+                        <td>Manager</td>
+                        <td>Admin</td>
+                          <td class="text-end" (click)="openDialog()">
+                            <a class="btn btn-outline-info btn-rounded"><i class="fas fa-eye"></i></a>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Philip Chaney</td>
+                        <td>philip.chaneygmail.com</td>
+                        <td>Manager</td>
+                        <td>Admin</td>
+                          <td class="text-end">
+                              <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-eye"></i></a>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Philip Chaney</td>
+                        <td>philip.chaneygmail.com</td>
+                        <td>Manager</td>
+                        <td>Admin</td>
+                          <td class="text-end">
+                              <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-eye"></i></a>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Philip Chaney</td>
+                        <td>philip.chaneygmail.com</td>
+                        <td>Manager</td>
+                        <td>Admin</td>
+                          <td class="text-end">
+                              <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-eye"></i></a>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Philip Chaney</td>
+                        <td>philip.chaneygmail.com</td>
+                        <td>Manager</td>
+                        <td>Admin</td>
+                          <td class="text-end">
+                              <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-eye"></i></a>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Philip Chaney</td>
+                        <td>philip.chaneygmail.com</td>
+                        <td>Manager</td>
+                        <td>Admin</td>
+                          <td class="text-end">
+                              <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-eye"></i></a>
+                          </td>
+                      </tr>
+                      
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>

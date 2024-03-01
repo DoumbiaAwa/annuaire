@@ -12,11 +12,11 @@ export class ProduitComponent implements OnInit {
   
   openDialog() {
     const dialogRef = this.dialog.open(FiliereAddComponent, {
-      width: '528px',
+      width: '700px',
       height: '500px',
       panelClass: 'warning-dialog',
       position: { 
-      top: '-20%',
+      top: '-25%',
        left: '35%' },
     });
   }

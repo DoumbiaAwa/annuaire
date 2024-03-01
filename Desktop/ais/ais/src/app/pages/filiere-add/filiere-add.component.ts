@@ -10,5 +10,8 @@ export class FiliereAddComponent implements OnInit {
   constructor(private dialogRef: MatDialogRef<FiliereAddComponent>) { }
   ngOnInit(): void {
   }
+  annuler(){
+    this.dialogRef.close();
+  }
 
 }

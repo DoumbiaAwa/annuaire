@@ -1,0 +1,30 @@
+<div class="conteneur">
+    <i class="fas fa-times" style=" margin-left: 95%; cursor: pointer;" (click)="annuler()"></i>
+
+    <br>
+    <h1>Veuillez sélectionner le type de message que vous souhaitez envoyer.</h1>
+    <br>
+
+    <div class="container">
+        <a routerLink="/add"><span class="label">Mail</span></a>
+      </div>
+      
+      <div class="container">
+        <span class="label">WhatSApp</span>
+      </div>
+<br>
+      <form action="#">
+        <label>
+            <input type="checkbox" name="envoyerAToutLeMonde"> Envoyer à tout le monde
+        </label>
+
+        <label>
+            <input type="checkbox" name="Selection"> Sélection uniquement
+        </label>
+    </form>
+
+      <!-- <div class="action">
+        <button class="enregistrer">Enregistrer</button>
+    </div> -->
+  
+</div>

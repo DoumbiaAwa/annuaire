@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MatDialogRef } from '@angular/material/dialog';
 @Component({
   selector: 'app-add-speculation',
   templateUrl: './add-speculation.component.html',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddSpeculationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialogRef: MatDialogRef<AddSpeculationComponent>) { }
+
 
   ngOnInit(): void {
+  }
+  annuler(){
+    this.dialogRef.close();
+
   }
 
 }

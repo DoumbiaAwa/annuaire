@@ -30,7 +30,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
+              "src/assets/css/master.css",
               "src/assets/scss/argon.scss"
             ],
             "scripts": [

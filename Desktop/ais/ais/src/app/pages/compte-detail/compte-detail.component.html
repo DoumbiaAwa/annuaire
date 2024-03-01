@@ -1,21 +1,46 @@
-<div class="contenu">
+<!-- <div class="content">
     <i class="fas fa-times" style=" margin-left: 95%; cursor: pointer;" (click)="annuler()"></i>
     <h1>Type Acteur</h1>
     <br>
     <div class="container">
         <span class="label">Nom</span>
         <span>Awa</span>
-      </div>
-
-      <div class="container">
         <span class="label">Adresse</span>
         <span>Kati</span>
-      </div>
-
-      <div class="container">
         <span class="label">Téléphone</span>
         <span>0000000</span>
-      </div>
     <button>Valider</button>
-</div>
-  
+    </div>
+     -->
+     <div class="container">
+      <div class="card mb-30">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h5 class="card-title" style="font-size: 20px;">Type acteur</h5>
+          <button type="button" class="btn-close" aria-label="Close" (click)="annuler()"></button>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="mb-3">
+              <label for="nom" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom">
+            </div>
+            <div class="mb-3">
+              <label for="adresse" class="form-label">Adresse</label>
+              <input type="text" class="form-control" id="adresse" placeholder="Entrez votre adresse">
+            </div>
+            <div class="mb-3">
+              <label for="telephone" class="form-label">Téléphone</label>
+              <input type="tel" class="form-control" id="telephone" placeholder="Entrez votre numéro de téléphone">
+            </div>
+            <div class="mb-3">
+              <label for="photo" class="form-label">Photo</label>
+              <input type="file" class="form-control" id="photo" accept="image/*">
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary">Valider</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    

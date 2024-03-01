@@ -13,8 +13,8 @@ export class CategorieComponent implements OnInit {
   
   openDialog() {
     const dialogRef = this.dialog.open(AddCategorieComponent , {
-      width: '528px',
-      height: '500px',
+      width: '700px',
+      height: '600px',
       panelClass: 'warning-dialog',
       position: { 
       top: '-20%',
