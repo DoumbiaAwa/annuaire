@@ -1,0 +1,33 @@
+
+<div class="container">
+    <div class="card mb-30">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <h5 class="card-title" style="font-size: 20px;">Ajouter une Region</h5>
+        <button type="button" class="btn-close" aria-label="Close" (click)="annuler()"></button>
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="mb-3">
+            <label for="nom" class="form-label">Nom de la region</label>
+            <input type="text" class="form-control" id="nom" placeholder="Entrez le nom">
+          </div>
+          <div class="mb-3">
+            <div class="form-group">
+                <label for="etat" class="form-label">Pays</label>
+                <select id="etat" class="form-control" name="etat" >
+                    <option value="non-enceinte">Catégorie1</option>
+                    <option value="enceinte">Catégorie2</option>
+                    <option value="pas-detat">Catégorie3</option> 
+                </select>
+            </div>
+            <label for="adresse" class="form-label">Description</label>
+            <input type="text" class="form-control" id="adresse" placeholder="Entrez la description">
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary">Valider</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  

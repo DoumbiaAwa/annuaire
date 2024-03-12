@@ -1,0 +1,43 @@
+<div class="box-body">
+    <div class="container-fluid">
+      <div class="page-title" style="text-align: center; font-size: 40px;">
+        <h3>liste des Commune</h3>
+       </div>
+       <button type="button" class="btn btn-primary mb-2"  (click)="openDialog()">Ajouter</button> 
+        <div class="box box-primary">
+          <div>
+            <input class="form-control" type="text" placeholder="Search"/>
+          </div>
+                <table width="80%" class="table table-hover" id="dataTables-example">
+                    <thead>
+                        <tr>
+                          <th>ID</th>
+                         <th>Code</th>
+                          <th>Libelle</th>
+                          <th>Description</th>
+                          <th>Statut</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let fieliere">
+                        <td>{{fieliere.idFiliere}}</td>
+                        <td>{{fieliere.codeFiliere}}</td>
+                        <td>{{fieliere.libelleFiliere}}</td>
+                        <td>{{fieliere.descriptionFiliere}}</td>
+                        <td>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitches1">
+                                <label class="custom-control-label" for="customSwitches1"></label>
+                            </div>
+                        </td>
+                        <td class="text-end">
+                          <a class="btn btn-outline-success btn-rounded"><i class="fas fa-pen text-green"></i></a>
+                          <a  class="btn btn-outline-danger btn-rounded"><i class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+  

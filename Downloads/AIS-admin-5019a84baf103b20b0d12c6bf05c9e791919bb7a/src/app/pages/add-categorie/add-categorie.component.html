@@ -1,0 +1,33 @@
+
+<div class="container">
+    <div class="card mb-30">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <h5 class="card-title" style="font-size: 20px;">Ajouter une Catégorie</h5>
+        <button type="button" class="btn-close" aria-label="Close" (click)="annuler()"></button>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="categoriForm" (ngSubmit)="ajoutCategorie()">
+          <div class="mb-3">
+            <label for="nom" class="form-label">libelle</label>
+            <input type="text" class="form-control" id="nom" placeholder="Entrez le nom"  formControlName="libelleCategorie">
+          </div>
+          <div class="mb-3">
+            <div class="form-group">
+              <label for="etat" class="form-label">Filière</label>
+              <select id="etat" class="form-control" formControlName="libelleFiliere">
+                  <option *ngFor="let filiere of filieres" [value]="filiere.idFiliere">{{filiere.libelleFiliere}}</option>
+              </select>
+          </div>
+
+            <label for="adresse" class="form-label">Description</label>
+            <input type="text" class="form-control" id="adresse" placeholder="Entrez la description" formControlName="descriptionCategorie">
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary" style=" background-color: rgba(23, 158, 13, 0.819);
+            border-color: rgba(23, 158, 13, 0.819) ;">Valider</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  

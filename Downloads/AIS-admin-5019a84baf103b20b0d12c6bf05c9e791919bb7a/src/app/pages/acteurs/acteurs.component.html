@@ -1,0 +1,59 @@
+
+
+<div class="box-body">
+  <div class="container-fluid">
+      <div class="page-title" style="text-align: center; font-size: 40px;">
+       <h3>liste des Types d'acteurs</h3>
+      </div>
+      <button type="button" class="btn btn-primary mb-2"  (click)="openDialog()">Ajouter</button>
+
+      <div class="box box-primary" >
+        <div>
+          <input class="form-control" type="text" placeholder="Search"/>
+        </div>
+          <!-- <div class="box-body"> -->
+              <table width="100%" class="table table-hover" id="dataTables-example" >
+                  <thead>
+                      <tr>
+                          <th>ID</th>
+                         <th>Code</th>
+                         <th>libelle</th>
+                         <th>description</th>
+                         <th></th>
+                         <th></th>
+                         <th>Statut</th>
+                         <!-- <th>Date Modification</th>
+                         <th>Personne</th> -->
+                         
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr  *ngFor="let acteur of acteurs">
+                        <td>{{ acteur.idTypeActeur }}</td>
+                        <td>{{ acteur.codeTypeActeur }}</td>
+                        <td>{{ acteur.libelle }}</td>
+                    
+                        <td>{{ acteur.descriptionTypeActeur }}</td>
+                        <!-- <td>{{ acteur.dateAjout }}</td> -->
+                        <!-- <td>{{ acteur.dateModif }}</td> -->
+                         <td></td>
+                         <td></td>
+                        <td>
+                          <!-- Default switch -->
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitches">
+                            <label class="custom-control-label" for="customSwitches"></label>
+                          </div>
+                        </td>
+                        
+                        <td class="text-end">
+                          <a class="btn btn-outline-success btn-rounded"><i class="fas fa-pen text-green"></i></a>
+                          <a  class="btn btn-outline-danger btn-rounded" (click)="supprimerActeur(acteur.idTypeActeur)"><i class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                  </tbody> 
+              </table>
+          <!-- </div> -->
+      </div>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+  
+         <div class="box-body">
+          <div class="container-fluid">
+            <button type="button" style="margin-left: 90%;" class="btn btn-primary mb-2"  (click)="openDialog()">Ajouter</button>
+              <div class="page-title">
+                  <h3> Liste des Zones de production             
+      </h3>
+              </div> 
+              <div class="box box-primary">
+                <div>
+                  <input class="form-control" type="text" placeholder="Search"/>
+                </div>
+                      <table width="80%" class="table table-hover" id="dataTables-example">
+                          <thead>
+                              <tr>
+                                <th>Photo</th>
+                                <th>Code</th>
+                                <th>Nom</th>
+                                <th>latitude</th>
+                                <th>longitude</th>
+                                <th>Statut</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr *ngFor="let zones of zone">
+                              <td>{{zone.photoZone}}</td>
+                              <td>{{zone.codeZone}}</td>
+                              <td>{{zone.nomZoneProduction}}</td>
+                              <td>{{zone.latitude}}</td>
+                              <td>{{zone.longitude}}</td>
+                              <td>
+                                  <div class="custom-control custom-switch">
+                                      <input type="checkbox" class="custom-control-input" id="customSwitches1">
+                                      <label class="custom-control-label" for="customSwitches1"></label>
+                                  </div>
+                              </td>
+
+                              <td class="text-end">
+                                <a class="btn btn-outline-success btn-rounded"><i class="fas fa-pen text-green"></i></a>
+                                <a  class="btn btn-outline-danger btn-rounded" (click)="supprimerActeur(acteur.idTypeActeur)"><i class="fas fa-trash"></i></a>
+                              </td>
+                              
+                          </tr>
+                              
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+        

@@ -1,0 +1,49 @@
+<div class="wrapper">
+    <nav class="navbar navbar-vertical navbar-expand-md navbar-light bg-white">
+      <div class="container-fluid" id="sidebar" >
+        
+        <div class="sidebar-header" style="display: flex; align-items: center;">
+            <img src="assets/img/bootstraper-logo.png" alt="bootraper logo" class="app-logo" style="width: 30px; height: 30px;">
+            <h1 style="margin-left: 10px; margin-top: 20px; color: rgb(255, 149, 10);">Koumi</h1>
+        </div>
+        
+       
+        <ul class="list-unstyled components text-secondary">
+            <li *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item" [attr.id]="'menu-item-' + menuItem.id">
+
+                <a *ngIf="menuItem.children"
+                   class="nav-link dropdown-toggle"
+                   data-bs-toggle="dropdown"
+                   aria-expanded="false"
+                   (click)="toggleSubMenu(menuItem.id)">
+                  <i class="ni {{menuItem.icon}}"></i>
+                  {{menuItem.title}}
+                </a>
+                
+          
+              <a *ngIf="!menuItem.children"
+                 routerLinkActive="active"
+                 [routerLink]="[menuItem.path]"
+                 class="nav-link">
+                <i class="ni {{menuItem.icon}}"></i>
+                {{menuItem.title}}
+              </a>
+          
+              <div class="dropdown-menu" *ngIf="menuItem.children" >
+                <a *ngFor="let child of menuItem.children"
+                   routerLinkActive="active"
+                   [routerLink]="[child.path]"
+                   class="dropdown-item">
+                  <i class="ni {{child.icon}}"></i>
+                  {{child.title}}
+                </a>
+              </div>
+            </li>
+          </ul>
+      </div>
+    </nav>
+</div>
+    
+                       
+
+

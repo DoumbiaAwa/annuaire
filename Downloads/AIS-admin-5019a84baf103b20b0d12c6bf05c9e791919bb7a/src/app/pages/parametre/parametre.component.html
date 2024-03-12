@@ -1,0 +1,86 @@
+
+   <div class="card">
+    <div class="card-header">Paramètre généraux</div>
+    <div class="card-body">
+        <!-- <h5 class="card-title">Example form with inline field validations</h5> -->
+        <form class="needs-validation" novalidate accept-charset="utf-8" *ngFor="let parametreGenerau of parametreGenerau ">
+            <div class="row g-2">
+                <div class="mb-3 col-md-6">
+                    <label  class="form-label">Photo</label>
+                    <input type="file" />
+
+                </div>
+            </div>
+             
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <!-- <input type="textarea"   placeholder="Ajouter une description" required> -->
+                <textarea  class="form-control"  [(ngModel)]="parametreGenerau.descriptionSysteme" rows="4" cols="50"></textarea>
+            </div>
+
+            <div class="row g-2">
+                <div class="mb-3 col-md-6">
+                    <label  class="form-label">Nom Structure</label>
+                    <input type="text" class="form-control"  [(ngModel)]="parametreGenerau.nomStructure">
+                    
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label  class="form-label">Sigle Structure</label>
+                    <input type="text" class="form-control"   [(ngModel)]="parametreGenerau.sigleStructure">
+    
+                </div>
+               
+            </div>
+            <div class="row g-2">
+                <div class="mb-3 col-md-6">
+                    <label for="password" class="form-label">Téléphone</label>
+                    <input type="text" class="form-control" name="description"  [(ngModel)]="parametreGenerau.telephoneStructure">
+                    
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label for="address" class="form-label">WhatsApp</label>
+                    <input type="text" class="form-control"   [(ngModel)]="parametreGenerau.whattsAppStructure">
+    
+                </div>
+               
+            </div>
+
+            <div class="row g-2">
+
+                <div class="mb-3 col-md-6">
+                    <label  class="form-label">Localité</label>
+                    <input type="text" class="form-control"   [(ngModel)]="parametreGenerau.localiteStructure">
+                    
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label  class="form-label">Adresse</label>
+                    <input type="text" class="form-control"  [(ngModel)]="parametreGenerau.adresseStructure">
+                    
+                </div>
+            </div>
+
+            <div class="row g-2">
+
+                <div class="mb-3 col-md-6">
+                    <label  class="form-label">Niveau 1</label>
+                    <input type="text" class="form-control"  [(ngModel)]="parametreGenerau.libelleNiveau1Pays">
+                    
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label for="password" class="form-label">Niveau 2</label>
+                    <input type="text" class="form-control" name="description"  [(ngModel)]="parametreGenerau.libelleNiveau2Pays" required>
+                    
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label for="password" class="form-label">Niveau 3</label>
+                    <input type="text" class="form-control" name="description"  [(ngModel)]="parametreGenerau.libelleNiveau3Pays" >
+                    
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Modifier</button>
+        </form>
+    </div>
+</div>

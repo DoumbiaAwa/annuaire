@@ -1,0 +1,21 @@
+.container {
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-around; /* or justify-content: space-between; */
+  }
+
+  .card {
+    margin-bottom: 20px; /* Adjust the margin as needed */
+  }
+
+  button{
+    background-color: rgba(23, 158, 13, 0.819);
+    border-color: rgba(23, 158, 13, 0.819) ;
+  }
+
+  .btn btn-primary{
+    background-color: orange;
+  }
